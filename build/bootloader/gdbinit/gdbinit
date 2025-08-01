@@ -1,0 +1,2 @@
+source /home/long/DriverADS1298RE_ESP32/build/bootloader/gdbinit/symbols
+source /home/long/DriverADS1298RE_ESP32/build/bootloader/gdbinit/connect
