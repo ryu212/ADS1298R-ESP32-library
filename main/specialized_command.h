@@ -10,7 +10,7 @@ void start();
 void stop();
 void RDATAC();
 void SDATAC();
-int8_t* RDATA();
+uint8_t* RDATA();
 void WREG(uint8_t addr, uint8_t* data, uint8_t n);
 uint8_t* RREG(uint8_t addr, uint8_t n);
 

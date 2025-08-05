@@ -13,5 +13,5 @@
 spi_device_handle_t spi;
 
 void spi_master_init(void);
-int8_t* spi_sent_receive(int8_t* send_data, int send_bytes, int receive_bytes);
+uint8_t* spi_sent_receive(uint8_t* send_data, int send_bytes, int receive_bytes);
 #endif
