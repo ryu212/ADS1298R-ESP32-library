@@ -1,5 +1,5 @@
 #include "SPIpro.h"
-
+spi_device_handle_t spi = NULL;
 void spi_master_init(void)
 {
     spi_bus_config_t buscfg = {
@@ -12,12 +12,18 @@ void spi_master_init(void)
     };
     esp_err_t ret = spi_bus_initialize(HSPI_HOST, &buscfg, SPI_DMA_CH_AUTO);
     ESP_ERROR_CHECK(ret);
+    if(ret != ESP_OK)
+    {
+    ESP_LOGE("SPI", "Spi init fail!");
+    return;
+    }
     spi_device_interface_config_t devcfg = {
         .clock_speed_hz = 1000000,
         .mode = 0,
         .spics_io_num = GPIO_NUM_5,
         .queue_size = 1,
     };
+    
     spi_bus_add_device(HSPI_HOST, &devcfg, &spi);
 }
 

@@ -10,7 +10,7 @@
 #define PIN_NUM_MOSI 23
 #define PIN_NUM_CLK  18
 #define PIN_NUM_CS   5
-spi_device_handle_t spi;
+extern spi_device_handle_t spi;
 
 void spi_master_init(void);
 uint8_t* spi_sent_receive(uint8_t* send_data, int send_bytes, int receive_bytes);

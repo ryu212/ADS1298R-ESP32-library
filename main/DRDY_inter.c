@@ -1,11 +1,13 @@
 #include "DRDY_inter.h"
 #include "mqtt_setup.h"
 #include "frontend_command.h"
+int32_t ECG_data;
 static void IRAM_ATTR drdy_isr_handler(void* arg)
 {
     read_1(&ECG_data,CHANNEL);
+    printf("ECG signal %ld", ECG_data);
     ESP_EARLY_LOGI("DRDY","DRDY interrupt triggered!");
-    public(ECG_data);
+    //public(ECG_data);
 }    
 void init_drdy_interrupt()
 {
