@@ -33,7 +33,7 @@ void spi_master_init(void)
     ESP_LOGI(TAG, "SPI bus initialized");
 
     spi_device_interface_config_t devcfg = {
-        .clock_speed_hz = 1 * 1000 * 1000,  // 1 MHz
+        .clock_speed_hz = 1 * 1000 * 100,  // 1 MHz
         .mode = 0,                          // SPI mode 0
         .spics_io_num = CS,
         .queue_size = 1,

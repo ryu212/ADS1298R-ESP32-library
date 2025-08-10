@@ -3,8 +3,8 @@
 
 | Function         | MCU Pin       | Description               |
 |------------------|---------------|---------------------------|
-| DOUT             | PA5           | MISO                      |
-| DIN              | PC13          | MOSI                      |
-| CLK              | PA9           | CLK                       |
-| CS               | PA10          | CHIPSELECT                |
-| DRDY             | PB13          | Data ready                |
+| DOUT             | 19            | MISO                      |
+| DIN              | 23            | MOSI                      |
+| CLK              | 18            | CLK                       |
+| CS right side apart 1 pin from DIN          | 5             | CHIPSELECT                |
+| DRDY             | 4             | Data ready                |
