@@ -1,7 +1,7 @@
 {
     "version":            "1.2",
     "project_name":       "DriverESP32",
-    "project_version":    "41ebea1-dirty",
+    "project_version":    "ce11069-dirty",
     "project_path":       "/home/long/DriverADS1298RE_ESP32",
     "idf_path":           "/home/long/esp/esp-idf",
     "build_dir":          "/home/long/DriverADS1298RE_ESP32/build",

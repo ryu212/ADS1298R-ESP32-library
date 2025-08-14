@@ -37,6 +37,7 @@ void spi_master_init(void)
         .mode = 0,                          // SPI mode 0
         .spics_io_num = CS,
         .queue_size = 1,
+        .flags = SPI_DEVICE_HALFDUPLEX,
     };
 
     // Gán thiết bị SPI vào bus
